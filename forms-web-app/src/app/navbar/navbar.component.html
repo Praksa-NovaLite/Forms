@@ -1,0 +1,8 @@
+<mat-toolbar color="primary">
+    <span>NovaLite</span>
+    <button mat-button [matMenuTriggerFor] = "menu">Exams</button>
+    <mat-menu #menu="matMenu">
+        <a href="/exams" mat-menu-item>Exams</a>
+    </mat-menu> 
+</mat-toolbar>
+

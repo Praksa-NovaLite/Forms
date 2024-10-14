@@ -1,0 +1,37 @@
+.exam-details {
+    border: 2px solid #cdb0e7;
+    border-radius: 5px;
+    padding: 20px;
+    margin-bottom: 20px;
+    max-width: 800px;
+    margin: 0 auto; 
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 20px;
+  }
+  
+  .questions-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); 
+  }
+  
+  .question-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    border: 1px solid #dcbee6;
+  }
+  
+  .score {
+    font-weight: bold;
+  }
+  .question-card{
+    display: flex;
+    flex-direction: row;
+    .category{
+      display: flex;
+      flex-direction: column;
+    }
+  }
+  

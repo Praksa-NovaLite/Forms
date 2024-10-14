@@ -1,0 +1,26 @@
+
+.exam-grid {
+  display: flex;
+    flex-wrap: wrap;
+    justify-content: center; 
+    align-items: center; 
+    gap: 20px; 
+    margin: auto; 
+}
+
+.exam-item {
+  background-color: #d8bef8;
+  width: 200px;
+  height: 200px; 
+  border-radius: 8px;
+  cursor: pointer;
+  display: flex; 
+  justify-content: center; 
+  align-items: center;
+  font-size: 18px; 
+ 
+}
+
+.exam-item:hover {
+  background-color:  #c596fa;
+}

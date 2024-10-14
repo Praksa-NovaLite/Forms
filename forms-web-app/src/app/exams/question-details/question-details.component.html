@@ -1,0 +1,6 @@
+<h3>{{ question.title }}</h3>
+<div class="answers">
+    <app-checkbox-question *ngIf="question.type === AnswerType.Checkbox" [question]="question"></app-checkbox-question>
+    <app-radio-button-question *ngIf="question.type === AnswerType.RadioButton"
+        [question]="question"></app-radio-button-question>
+</div>

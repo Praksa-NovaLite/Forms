@@ -1,0 +1,23 @@
+<div *ngIf="exam" class="exam-details">
+    <div class="exam-header">
+      <h2>Taking the exam</h2>
+    </div>
+
+    <div class="question-card">
+      <div>
+        <div *ngFor="let category of getUniqueCategories()" class="category" >
+          <button mat-stroked-button color="primary" (click)="setFilteredQuestions(category)">{{ category }}</button>
+        </div>
+      </div>
+      <mat-card style="background-color: white; width: 50vw;">
+      <div *ngFor="let question of filteredQuestions">
+          <h3>{{question.title}}</h3>
+          <app-radio-button-question *ngIf="question.type === 0" [question]="question"></app-radio-button-question> 
+          <app-checkbox-question *ngIf="question.type === 1" [question]="question"></app-checkbox-question>
+      </div>
+      </mat-card>
+    </div>
+    <div style="text-align: center;">
+      <button mat-raised-button color="primary" style="width: 300px;">Finish Exam</button>
+    </div> 
+</div>
